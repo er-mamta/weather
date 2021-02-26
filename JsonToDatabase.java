@@ -36,10 +36,7 @@ public class JsonToDatabase {
 	   try {
          //Parsing the contents of the JSON file
          JSONObject jsonObject = (JSONObject) jsonParser.parse(result);
-         //Retrieving the array
-   //      JSONArray jsonArray = (JSONArray) jsonObject.get("list.main");
-     //    JSONArray jsonArray_1 = (JSONArray) jsonObject.get("city");
-         Connection con = ConnectToDB();
+  Connection con = ConnectToDB();
          //Insert a row into the  table
          
          while(jsonObject != null) {
@@ -78,15 +75,7 @@ public class JsonToDatabase {
 }
         
          
-         
-    /*     for(Object obj: jsonArray_1) {
-             JSONObject record = (JSONObject) obj;
-
-        	 city_id = Integer.parseInt((String) record.get("id"));
-             city_name = (String) record.get("name");
-             country = (String) record.get("country");
-
-         }*/
+  
        
             
             
